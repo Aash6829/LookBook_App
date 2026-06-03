@@ -116,6 +116,25 @@ const GeneratorPage = () => {
         🔀 Generate New Outfit
       </button>
 
+      <button onClick={generateOutfit} style={{ marginTop: '20px' }}>
+        🔀 Generate New Outfit
+      </button>
+
+      <button
+        onClick={() => navigate("/ai-generator")}
+        style={{
+          marginTop: "20px",
+          padding: "10px 20px",
+          backgroundColor: "#007bff",
+          color: "white",
+          border: "none",
+          borderRadius: "8px",
+          cursor: "pointer",
+        }}
+      >
+        🤖 Generate Outfit with AI
+      </button>
+
       {/* Go Back Button */}
       <button
         onClick={goBack}

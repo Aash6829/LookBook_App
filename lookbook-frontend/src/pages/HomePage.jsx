@@ -15,8 +15,39 @@ const HomePage = () => {
     <div style={{ textAlign: 'center' }}>
       <h1>🧥 How are we styling today?</h1>
       <p>Select a vibe to get started:</p>
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '30px' }}>
-        {styles.map(style => (
+
+      {/* 2 starts
+      2 ends */}
+      {/* AI Outfit Generator Button */}
+      <div style={{ marginTop: '20px' }}>
+        <button
+          onClick={() => navigate('/ai-generator')}
+          style={{
+            padding: '10px 25px',
+            fontSize: '16px',
+            backgroundColor: '#333',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            marginBottom: '30px'
+          }}
+        >
+          🤖 AI Outfit Generator
+        </button>
+      </div>
+
+      {/* Style Buttons */}
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '20px',
+          flexWrap: 'wrap',
+          marginTop: '10px'
+        }}
+      >
+        {styles.map((style) => (
           <button
             key={style}
             onClick={() => handleStyleClick(style)}
@@ -30,8 +61,8 @@ const HomePage = () => {
               textTransform: 'capitalize',
               transition: '0.2s'
             }}
-            onMouseEnter={e => e.target.style.backgroundColor = '#e0e0e0'}
-            onMouseLeave={e => e.target.style.backgroundColor = '#f0f0f0'}
+            onMouseEnter={(e) => (e.target.style.backgroundColor = '#e0e0e0')}
+            onMouseLeave={(e) => (e.target.style.backgroundColor = '#f0f0f0')}
           >
             {style}
           </button>

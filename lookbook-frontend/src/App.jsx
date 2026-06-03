@@ -7,6 +7,10 @@ import WardrobePage from './pages/dashboard/WardrobePage';
 import FavoritesPage from './pages/dashboard/FavoritesPage';
 import DashBoardLayout from './pages/dashboard/DashBoardLayout';
 
+//2
+import AIGeneratorPage from './pages/AIGeneratorPage';
+
+//2 ends 
 
 function App() {
   return (
@@ -18,6 +22,7 @@ function App() {
           <Route path="wardrobe" element={<WardrobePage />} />
           <Route path="favorites" element={<FavoritesPage />} />
         </Route>
+        <Route path="/ai-generator" element={<AIGeneratorPage />} />
       </Routes>
     </Router>
   );
