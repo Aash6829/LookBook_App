@@ -12,7 +12,12 @@ lookbook-frontend/build/
 coverage/
 
 # Environment files
+# Environment files
 .env
+.env.*
+lookbook-backend/.env
+lookbook-frontend/.env
+
 .env.local
 .env.development.local
 .env.test.local
@@ -21,7 +26,9 @@ coverage/
 # IDE files
 .vscode/
 .idea/
-.Assets/
+
+# Assets folder 
+Assets/
 
 # OS files
 .DS_Store
